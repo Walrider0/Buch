@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
     <title>Buch</title>
 </head>
 <body>
@@ -23,15 +24,6 @@
                 <a href="index.html">
                     <img src="Icons/home.png" alt="homeIcon" height="24px" width="24px">
                     <span>Home</span>
-                    
-                </a>
-            </li>
-
-
-
-
-
-            <li class="active">
                 <a href="dashboard.html">
                     <img src="Icons/home.png" alt="homeIcon" height="24px" width="24px">
 
@@ -40,16 +32,17 @@
                 </a>
             </li>
             <li>
-                <button class="dropdown-btn">
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
                     <img src="Icons/home.png" alt="yes" height="24px" width="24px">
                     <span>Create</span>
                     <img src="Icons/dropdown_arrow.png" alt="yes" height="24px" width="24px">
                 </button>
-                <ul class="sub_menu">
-                    <li><a href="#">Folder</a></li>
-                    <li><a href="#">Document</a></li>
-                    <li><a href="#">Project</a></li>
-
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="#">Folder</a></li>
+                        <li><a href="#">Document</a></li>
+                        <li><a href="#">Project</a></li>
+                    </div>
                 </ul>
             </li>
 
