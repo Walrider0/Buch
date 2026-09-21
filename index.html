@@ -11,7 +11,9 @@
     <nav id="sidebar">
         <ul>
 
-            <li>
+            <!-- Icon -->
+
+            <li class="active">
                 <span class="logo">Buch</span>
                 <button onclick=toggleSidebar() id="toggle-btn">
                     
@@ -20,53 +22,62 @@
                 </button>
             </li>
 
+            <!-- Introduction -->
 
             <li class="active">
                 <a href="index.html">
                     <img src="Icons/home.png" alt="homeIcon" height="24px" width="24px">
                     <span>Home</span>
-                <a href="dashboard.html">
-                    <img src="Icons/home.png" alt="homeIcon" height="24px" width="24px">
+                </a>
+            </li>
 
-                    <span>Dashboard</span>
+            <!-- Links -->
+
+            <li class="active">
+                <a href="index.html">
+                    <img src="Icons/links.png" alt="homeIcon" height="24px" width="24px">
+                    <span>Links</span>
+                
     
                 </a>
             </li>
+
+            <!-- Codes -->
+
             <li>
                 <button onclick=toggleSubMenu(this) class="dropdown-btn">
-                    <img src="Icons/home.png" alt="yes" height="24px" width="24px">
-                    <span>Create</span>
+                    <img src="Icons/code.png" alt="yes" height="24px" width="24px">
+                    <span>Codes</span>
                     <img src="Icons/dropdown_arrow.png" alt="yes" height="24px" width="24px">
                 </button>
                 <ul class="sub-menu">
                     <div>
-                        <li><a href="#">Folder</a></li>
-                        <li><a href="#">Document</a></li>
-                        <li><a href="#">Project</a></li>
+                        <li><a href="#">C#</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">Python</a></li>
+                    </div>
+                </ul>
+            </li>
+
+            <!-- Notes -->
+
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <img src="Icons/book.png" alt="yes" height="24px" width="24px">
+                    <span>Notes</span>
+                    <img src="Icons/dropdown_arrow.png" alt="yes" height="24px" width="24px">
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="#">Dimag</a></li>
+                        <li><a href="#">Kalkulus</a></li>
+                        
                     </div>
                 </ul>
             </li>
 
 
 
-
-            <li class="active">
-                <a href="calendar.html">
-                    <img src="Icons/home.png" alt="homeIcon" height="24px" width="24px">
-                    <span>Calendar</span>
-                </a>
-            </li>
-
-
-
-
-
-            <li class="active">
-                <a href="profile.html"> 
-                    <img src="Icons/home.png" alt="homeIcon" height="24px" width="24px">
-                    <span>Profile</span>
-                </a>
-            </li>
         </ul>
     </nav>
 

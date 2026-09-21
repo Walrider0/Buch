@@ -37,6 +37,8 @@ body{
 
     transition: 300ms ease-in-out;
     overflow: hidden;
+
+    text-wrap: nowrap;
 }
 #sidebar.close{
     padding: 5px;
@@ -67,12 +69,21 @@ body{
     }
 }
 
-#sidebar a, #sidebar .dropdown-btn, #sidebar, .logo{
+#sidebar a, #sidebar .dropdown-btn{
     border-radius: .5em;
     padding: .85em;
     text-decoration: none;
     color: white;
     display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#sidebar .logo{
+    border-radius: .5em;
+    padding: .85em;
+    text-decoration: none;
+    color: white;
     align-items: center;
     gap: 1em;
 }
