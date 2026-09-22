@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="button.css">
+    <script src="app.js" defer></script>
+    <title>Buch</title>
+</head>
+<body>
+    <nav id="sidebar">
+        <ul>
+
+            <!-- Icon -->
+
+            <li>
+                <span class="logo">Buch</span>
+                <button onclick=toggleSidebar() id="toggle-btn">
+                    
+                    <img src="Icons/side_arrow.png" alt="homeIcon" height="24px" width="24px">
+
+                </button>
+            </li>
+
+            <!-- Introduction -->
+
+            <li>
+                <a href="index.html">
+                    <img src="Icons/home.png" alt="homeIcon" height="24px" width="24px">
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <!-- Links -->
+
+             <li class="active">
+                <a href="links.html">
+                    <img src="Icons/links.png" alt="homeIcon" height="24px" width="24px">
+                    <span>Links</span>
+                
+    
+                </a>
+            </li>
+
+            <!-- Codes -->
+
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <img src="Icons/code.png" alt="yes" height="24px" width="24px">
+                    <span>Codes</span>
+                    <img src="Icons/dropdown_arrow.png" alt="yes" height="24px" width="24px">
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="#">C#</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">Python</a></li>
+                    </div>
+                </ul>
+            </li>
+
+            <!-- Notes -->
+
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <img src="Icons/book.png" alt="yes" height="24px" width="24px">
+                    <span>Notes</span>
+                    <img src="Icons/dropdown_arrow.png" alt="yes" height="24px" width="24px">
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="#">Dimag</a></li>
+                        <li><a href="#">Kalkulus</a></li>
+                        
+                    </div>
+                </ul>
+            </li>
+
+
+
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <div class="container">
+            <h1>Arduino elmélet</h1>
+            <p>Sütő József oldala</p>
+            <a href="https://irh.inf.unideb.hu/~sutoj/education.php" target="_blank" class="btn-simple">Gomb</a>
+        </div>
+
+        <div class="container">
+            <h1>Arduino szimuláló</h1>
+            <p>Tinkercard</p>
+            <a href="https://www.tinkercad.com/" target="_blank" class="btn-simple">Gomb</a>
+        </div>
+
+        <div class="container">
+            <h1>Unity game dev</h1>
+            <p>Réka oldal</p>
+            <a href="tinyurl.com/RakeDrive" target="_blank" class="btn-simple">Gomb</a>
+        </div>
+
+        <div class="container">
+            <h1>
+                <img src="Icons/cs.png" alt="cs" height="24px" width="24px">
+                Troll oldala</h1>
+            <p>Sok minden</p>
+            <a href="https://xdepot.uni-eszterhazy.hu/index.php/s/i66uTfLh5XjkSqc" target="_blank" class="btn-simple">Gomb</a>
+        </div>
+
+    </main>
+</body>
+</html>

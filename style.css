@@ -62,10 +62,10 @@ body{
 
 
 #sidebar ul li.active a{
-    color: aliceblue;
+    color: rgb(23, 88, 145);
 
     img{
-        fill: aliceblue;
+        fill: rgb(23, 88, 145);
     }
 }
 
@@ -159,7 +159,7 @@ body{
     cursor: pointer;
 }
 
-
+/* ---------------------Main part--------------------- */
 
 main p{
     color: whitesmoke;
@@ -181,3 +181,79 @@ main p{
 }
 
 
+/* For mobile */
+
+@media(max-width: 800px) {
+    body{
+    grid-template-columns: 1fr;
+    }
+    main{
+        padding: 2em 1em 60px 1em;
+    }
+    .container{
+        border: none;
+        padding: 0;
+    }
+    #sidebar{
+        height: 60px;
+        width: 100%;
+        border-right: none;
+        border-top: 1px solid rgb(45, 37, 65);
+        padding: 0;
+        position: fixed;
+        top: unset;
+        bottom: 0;
+
+        > ul{
+            padding: 0;
+            display: grid;
+            grid-auto-columns: 60px;
+            grid-auto-flow: column;
+            align-items: center;
+            overflow-x: scroll;
+        }
+        ul li{
+            height: 100%;
+        }
+        ul a, ul .dropdown-btn{
+            width: 60px;
+            height: 60px;
+            padding: 0;
+            border-radius: 0;
+            justify-content: center;
+        }
+
+
+        ul li span, ul li:first-child, .dropdown-btn img:last-child{
+            display: none;
+        }
+
+
+        ul li .sub-menu.show{
+            position: fixed;
+            bottom: 60px;
+            left: 0;
+            box-sizing: border-box;
+            height: 60px;
+            width: 100%;
+            background-color: rgb(31, 53, 73);
+            border-top: 1px solid rgb(17, 17, 26);
+            display: flex;
+            justify-content: center;
+
+            > div{
+                overflow-x: auto;
+            }
+
+            li{
+                display: inline-flex;
+            }
+            a{
+                box-sizing: border-box;
+                padding: 1em;
+                width: auto;
+                justify-content: center;
+            }
+        }
+    }
+}
