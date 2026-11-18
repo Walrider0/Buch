@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="button.css">
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="public/code-box.css">
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/code-box.js"></script>
     <title>Buch</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
 
             <!-- Introduction -->
 
-            <li>
+            <li class="active">
                 <a href="index.html">
                     <img src="Icons/home.png" alt="homeIcon" height="24px" width="24px">
                     <span>Home</span>
@@ -34,7 +35,7 @@
 
             <!-- Links -->
 
-             <li class="active">
+            <li>
                 <a href="links.html">
                     <img src="Icons/links.png" alt="homeIcon" height="24px" width="24px">
                     <span>Links</span>
@@ -65,13 +66,13 @@
             <li>
                 <button onclick=toggleSubMenu(this) class="dropdown-btn">
                     <img src="Icons/book.png" alt="yes" height="24px" width="24px">
-                    <span>Notes</span>
+                    <span>Commands</span>
                     <img src="Icons/dropdown_arrow.png" alt="yes" height="24px" width="24px">
                 </button>
                 <ul class="sub-menu">
                     <div>
-                        <li><a href="#">Dimag</a></li>
-                        <li><a href="#">Kalkulus</a></li>
+                        <li><a href="git.html">Git</a></li>
+                        <li><a href="#">TypeScript</a></li>
                         
                     </div>
                 </ul>
@@ -84,33 +85,20 @@
 
 
     <main>
-
         <div class="container">
-            <h1>Arduino elmélet</h1>
-            <p>Sütő József oldala</p>
-            <a href="https://irh.inf.unideb.hu/~sutoj/education.php" target="_blank" class="btn-simple">Gomb</a>
+            <h1>Hello World !</h1>
+            <p>NIgga</p>
         </div>
 
         <div class="container">
-            <h1>Arduino szimuláló</h1>
-            <p>Tinkercard</p>
-            <a href="https://www.tinkercad.com/" target="_blank" class="btn-simple">Gomb</a>
+            <div class="codebox">
+                <button class="copy" type="button" aria-label="Másolás">
+                    <img class="icon-copy" src="Icons/content-copy.png" alt="">
+                    <img class="icon-done" src="Icons/check.png" alt="">
+                </button>
+                <pre><code>console.log("Szia, világ!");</code></pre>
+            </div>
         </div>
-
-        <div class="container">
-            <h1>Unity game dev</h1>
-            <p>Réka oldal</p>
-            <a href="tinyurl.com/RakeDrive" target="_blank" class="btn-simple">Gomb</a>
-        </div>
-
-        <div class="container">
-            <h1>
-                <img src="Icons/cs.png" alt="cs" height="24px" width="24px">
-                Troll oldala</h1>
-            <p>Sok minden</p>
-            <a href="https://xdepot.uni-eszterhazy.hu/index.php/s/i66uTfLh5XjkSqc" target="_blank" class="btn-simple">Gomb</a>
-        </div>
-
     </main>
 </body>
 </html>

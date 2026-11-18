@@ -1,0 +1,20 @@
+.codebox {
+  position: relative;
+  background: #393b3c;
+  border: 1px solid #dde2e8;
+  border-radius: 12px;
+}
+.codebox pre { margin: 0; padding: 16px; overflow-x: auto; }
+.codebox code { font: 14px/1.6 ui-monospace, Menlo, Consolas, monospace; }
+
+.copy {
+  position: absolute; top: 8px; right: 8px;
+  width: 32px; height: 32px; padding: 0;
+  display: grid; place-items: center;
+  background: #241e1e; border: 1px solid #dde2e8; border-radius: 8px;
+  cursor: pointer;
+}
+.copy img { width: 16px; height: 16px; grid-area: 1 / 1; }
+.copy .icon-done { display: none; }
+.copy.done .icon-copy { display: none; }
+.copy.done .icon-done { display: block; }
