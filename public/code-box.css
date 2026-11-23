@@ -3,6 +3,7 @@
   background: #393b3c;
   border: 1px solid #dde2e8;
   border-radius: 12px;
+  margin-bottom: 5%;
 }
 .codebox pre { margin: 0; padding: 16px; overflow-x: auto; }
 .codebox code { font: 14px/1.6 ui-monospace, Menlo, Consolas, monospace; }

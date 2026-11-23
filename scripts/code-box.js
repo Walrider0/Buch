@@ -1,8 +1,13 @@
-document.querySelectorAll(".codebox").forEach(box => {
-  const btn = box.querySelector(".copy");
-  btn.addEventListener("click", async () => {
-    await navigator.clipboard.writeText(box.querySelector("code").innerText);
-    btn.classList.add("done");
-    setTimeout(() => btn.classList.remove("done"), 1500);
-  });
-});
+async function copyText(btn) {
+  const text = btn.closest(".codebox").querySelector("code").innerText;
+
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch (e) {
+    console.error("Másolás nem sikerült:", e);
+    return;
+  }
+
+  btn.classList.add("done");
+  setTimeout(() => btn.classList.remove("done"), 1500);
+}

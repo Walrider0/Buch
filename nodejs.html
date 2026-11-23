@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="public/code-box.css">
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/code-box.js"></script>
+    <title>Buch</title>
+</head>
+<body>
+    <nav id="sidebar">
+        <ul>
+
+            <!-- Icon -->
+
+            <li>
+                <span class="logo">Buch</span>
+                <button onclick=toggleSidebar() id="toggle-btn">
+                    
+                    <img src="Icons/side_arrow.png" alt="homeIcon" height="24px" width="24px">
+
+                </button>
+            </li>
+
+            <!-- Introduction -->
+
+            <li class="active">
+                <a href="index.html">
+                    <img src="Icons/home.png" alt="homeIcon" height="24px" width="24px">
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <!-- Links -->
+
+            <li>
+                <a href="links.html">
+                    <img src="Icons/links.png" alt="homeIcon" height="24px" width="24px">
+                    <span>Links</span>
+                
+    
+                </a>
+            </li>
+
+            <!-- Codes -->
+
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <img src="Icons/code.png" alt="yes" height="24px" width="24px">
+                    <span>Codes</span>
+                    <img src="Icons/dropdown_arrow.png" alt="yes" height="24px" width="24px">
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="#">C#</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">Python</a></li>
+                    </div>
+                </ul>
+            </li>
+
+            <!-- Notes -->
+
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <img src="Icons/book.png" alt="yes" height="24px" width="24px">
+                    <span>Commands</span>
+                    <img src="Icons/dropdown_arrow.png" alt="yes" height="24px" width="24px">
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="git.html">Git</a></li>
+                        <li><a href="nodejs.html">NodeJs</a></li>
+                        
+                    </div>
+                </ul>
+            </li>
+
+
+
+        </ul>
+    </nav>
+
+
+    <main>
+        <div class="container">
+            <h1>Hello World !</h1>
+            <p>NIgga</p>
+        </div>
+
+        <div class="container">
+            <div class="codebox">
+                <button class="copy" type="button" onclick="copyText(this)">
+                    <img class="icon-copy" src="Icons/content-copy.png" alt="">
+                    <img class="icon-done" src="Icons/check.png" alt="">
+                </button>
+                <pre><code>git add .</code></pre>
+            </div>
+
+            <div class="codebox">
+                <button class="copy" type="button" onclick="copyText(this)">
+                    <img class="icon-copy" src="Icons/content-copy.png" alt="">
+                    <img class="icon-done" src="Icons/check.png" alt="">
+                </button>
+                <pre><code>git commit -m "Text"</code></pre>
+            </div>
+
+             <div class="codebox">
+                <button class="copy" type="button" onclick="copyText(this)">
+                    <img class="icon-copy" src="Icons/content-copy.png" alt="">
+                    <img class="icon-done" src="Icons/check.png" alt="">
+                </button>
+                <pre><code>git push</code></pre>
+            </div>
+
+            <div class="codebox">
+                <button class="copy" type="button" onclick="copyText(this)">
+                    <img class="icon-copy" src="Icons/content-copy.png" alt="">
+                    <img class="icon-done" src="Icons/check.png" alt="">
+                </button>
+                <pre><code>git status</code></pre>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

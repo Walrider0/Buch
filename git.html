@@ -72,7 +72,7 @@
                 <ul class="sub-menu">
                     <div>
                         <li><a href="git.html">Git</a></li>
-                        <li><a href="#">TypeScript</a></li>
+                        <li><a href="nodejs.html">NodeJs</a></li>
                         
                     </div>
                 </ul>
@@ -92,12 +92,37 @@
 
         <div class="container">
             <div class="codebox">
-                <button class="copy" type="button" aria-label="Másolás">
+                <button class="copy" type="button" onclick="copyText(this)">
                     <img class="icon-copy" src="Icons/content-copy.png" alt="">
                     <img class="icon-done" src="Icons/check.png" alt="">
                 </button>
-                <pre><code>console.log("Szia, világ!");</code></pre>
+                <pre><code>git add .</code></pre>
             </div>
+
+            <div class="codebox">
+                <button class="copy" type="button" onclick="copyText(this)">
+                    <img class="icon-copy" src="Icons/content-copy.png" alt="">
+                    <img class="icon-done" src="Icons/check.png" alt="">
+                </button>
+                <pre><code>git commit -m "Text"</code></pre>
+            </div>
+
+             <div class="codebox">
+                <button class="copy" type="button" onclick="copyText(this)">
+                    <img class="icon-copy" src="Icons/content-copy.png" alt="">
+                    <img class="icon-done" src="Icons/check.png" alt="">
+                </button>
+                <pre><code>git push</code></pre>
+            </div>
+
+            <div class="codebox">
+                <button class="copy" type="button" onclick="copyText(this)">
+                    <img class="icon-copy" src="Icons/content-copy.png" alt="">
+                    <img class="icon-done" src="Icons/check.png" alt="">
+                </button>
+                <pre><code>git status</code></pre>
+            </div>
+
         </div>
     </main>
 </body>
